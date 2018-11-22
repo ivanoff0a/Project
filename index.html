@@ -7,16 +7,33 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-	<div class="container js-mainParent">
-		<h1>goal !</h1>
-		<div class="panel">
-			<div class="panel-item js-addPurpose">
-				<img class="panel-item__img" src="assets/img/goal.svg">
-				<p class="panel-item__p">new purpose !</p>
+	<div class="container js-mainParent"></div>
+	</div>
+	
+	<div class="modal">
+		<div class="modal__bg"></div>
+		<div class="modal__body js-modalBody">
+			<div class="card">
+				<div class="form">
+					<p>введи своё имя !</p>
+					<input type="text">
+				</div>
+				<div class="form">
+					<p>введи цель, к которой стремишься !</p>
+					<input type="text">
+				</div>
+				<div class="form">
+					<p>введи время, которое готов потратить на достижение цели!</p>
+					<input type="text">
+				</div>
 			</div>
 		</div>
 	</div>
+
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/scripts/script.js"></script>
+	<script type="text/javascript" src="assets/scripts/interfaceBuilder.js"></script>
+	<script type="text/javascript" src="assets/scripts/modalService.js"></script>
 </body>
 </html>
