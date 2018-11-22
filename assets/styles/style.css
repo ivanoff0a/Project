@@ -1,0 +1,54 @@
+body, h1, h2, h3, h4, a, p {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	height: 100vh;
+	margin: 0 auto;
+	width: 1440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-ms-align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.container h1 {
+	font-size: 100px;
+	padding-bottom: 50px;
+}
+
+
+.panel-item  {
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.panel-item__img {
+	height: 300px;
+}
+
+.panel-item__p {
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.panel-item:hover {
+	transform: scale(1.1);
+	transition: .3s;
+}
