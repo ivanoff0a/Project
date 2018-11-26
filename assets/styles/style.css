@@ -13,7 +13,6 @@ img {
 
 .container {
 	height: 100vh;
-	width: 1440px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -62,16 +61,21 @@ img {
 	fill: #d73232;
 }
 
-
-.modal {
-	display: flex;
-	justify-content: center;
-	-ms-align-items: center;
-	align-items: center;
+.modal,
+.modal__bg {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
+.modal,
+.modal__bg,
+.modal__body {
+	transition: .3s ease-out;
+}
 
-/*.modal {
+.modal {
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -86,6 +90,48 @@ img {
 
 .modal__body {
 	z-index: 2;
-	background-color: #000;
-	width: 300px;
-}*/
+	background-color: white;
+	padding: 20px;
+	height: 300px;
+}
+
+.card__headline {
+	color: black;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.card__form {
+	margin-top: 10px;
+}
+
+.card__form input {
+	outline: none;
+	margin-top: 5px;
+	width: 250px;
+}
+
+.card__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 100px;
+	border: grey 1px solid;
+	cursor: pointer;
+	transition: .3s;
+	margin-top: 20px;
+}
+
+.card__img {
+	height: 30px;
+	transition: .3s;
+}
+
+.card__btn:hover {
+	border-color: green;
+}
+
+.card__btn:hover .card__img {
+	fill: green;
+}
