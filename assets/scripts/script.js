@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	let addPurposeBtn = $('.js-addPurpose');
-	let userProjects = []
+	let textProjectName = $('.js-textProjectName');
+	let userProjects = [];
 	
 	interfaceBuilder.buildInterface('firstScreen');
 
@@ -20,6 +21,7 @@ $(document).ready(function() {
 			projectDuration: $('body').find('.js-newProjectDuration').val(),
 		})
 		$('.modal').remove();
-		console.log(userProjects);
+		interfaceBuilder.build('goalScreen');
+		textProjectName.text($('body').find('.js-newProjectName').val());
 	});
 });
