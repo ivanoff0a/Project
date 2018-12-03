@@ -171,9 +171,18 @@ img {
 	width: 130px;
 }
 
+.path-container {
+	display: flex;
+	justify-content: center;
+}
+
 .goal__path {
-	width: calc(100% - 260px);
-	border: 2px dashed black;
+	position: relative;
+	width: 200px;
+	border-bottom: 2px dashed black;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
 }
 
 .goal__path:hover {
@@ -195,4 +204,20 @@ img {
 
 .goal__param {
 	color: gray;
+}
+
+.goal__action {
+}
+
+.goal__action__img {
+	position: absolute;
+	top: -12px;
+	height: 25px;
+	width: 25px;
+	z-index: 100;
+	transition: .3s;
+}
+
+.goal__action:hover .goal__action__img {
+	fill: purple;
 }

@@ -38,28 +38,31 @@ interfaceBuilder.interfaces = {
 						<img src="assets/img/route.svg">\
 						<h1 class="js-textProjectName"></h1>\
 					</div>\
-					<div class="goal__body">\
-						<div class="goal__elem goal__start">\
-							<div class="goal__info">\
-								<div class="goal__attr">\
-									<p class="goal__param">Время начала:</p>\
-									<p class="goal__value">29.11.2018</p>\
+					<div class="container">\
+						<div class="goal__body">\
+							<div class="goal__elem goal__start">\
+								<div class="goal__info">\
+									<div class="goal__attr">\
+										<p class="goal__param">Время начала:</p>\
+										<p class="goal__value">29.11.2018</p>\
+									</div>\
+									<img src="assets/img/home-button.svg">\
 								</div>\
-								<img src="assets/img/home-button.svg">\
+							</div>\
+							<div class="goal__elem goal__path">\
+							</div>\
+							<div class="goal__elem goal__end">\
+								<div class="goal__info">\
+									<div class="goal__attr">\
+										<p class="goal__param">Время конца:</p>\
+										<p class="goal__value">29.11.2019</p>\
+									</div>\
+									<img src="assets/img/finish.svg">\
+								</div>\
 							</div>\
 						</div>\
-						<div class="goal__elem goal__path"></div>\			
-						<div class="goal__elem goal__end">\
-							<div class="goal__info">\
-								<div class="goal__attr">\
-									<p class="goal__param">Время конца:</p>\
-									<p class="goal__value">29.11.2019</p>\
-								</div>\
-								<img src="assets/img/finish.svg">\
-							</div>\
-						</div>\				
 					</div>\
-				</div>'						
+				</div>'
 }
 
 interfaceBuilder.buildInterface = function() {
