@@ -33,36 +33,48 @@ interfaceBuilder.interfaces = {
 						</svg>	\
 						<p class="panel-item__p">new purpose !</p>\
 					</div>',
-	goalScreen: '<div class="goal-container">\
-					<div class="goal__header">\
-						<img src="assets/img/route.svg">\
-						<h1 class="js-textProjectName"></h1>\
-					</div>\
-					<div class="container">\
-						<div class="goal__body">\
-							<div class="goal__elem goal__start">\
-								<div class="goal__info">\
-									<div class="goal__attr">\
-										<p class="goal__param">Время начала:</p>\
-										<p class="goal__value">29.11.2018</p>\
-									</div>\
-									<img src="assets/img/home-button.svg">\
-								</div>\
+	goalScreen: 
+		'<div class="goal-container">\
+			<div class="goal__header">\
+				<img src="assets/img/route.svg">\
+				<h1 class="js-textProjectName"></h1>\
+			</div>\
+			<div class="path-container">\
+				<div class="goal__body">\
+					<div class="goal__elem goal__start">\
+						<div class="goal__info">\
+							<div class="goal__attr">\
+								<p class="goal__param">Время начала:</p>\
+								<p class="goal__value">29.11.2018</p>\
 							</div>\
-							<div class="goal__elem goal__path">\
-							</div>\
-							<div class="goal__elem goal__end">\
-								<div class="goal__info">\
-									<div class="goal__attr">\
-										<p class="goal__param">Время конца:</p>\
-										<p class="goal__value">29.11.2019</p>\
-									</div>\
-									<img src="assets/img/finish.svg">\
-								</div>\
-							</div>\
+							<img src="assets/img/home-button.svg">\
 						</div>\
 					</div>\
-				</div>'
+					<div class="goal__elem goal__path">\
+						<div class="goal__action js-addAction">\
+							<svg class="goal__action__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" \
+							y="0px"	 width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">\
+							<g>\
+								<g id="add-circle">\
+									<path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M382.5,280.5h-102v102h-51v-102\
+									h-102v-51h102v-102h51v102h102V280.5z"\
+								</g>\
+							</g>\
+							</svg>\
+						</div>\
+					</div>\
+					<div class="goal__elem goal__end">\
+						<div class="goal__info">\
+							<div class="goal__attr">\
+								<p class="goal__param">Время конца:</p>\
+								<p class="goal__value">29.11.2019</p>\
+							</div>\
+							<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDk2IDQ5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk2IDQ5NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTQyOCwyNEgxMDBWOGMwLTQuNDE4LTMuNTgyLTgtOC04SDY4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4MGMwLDQuNDE4LDMuNTgyLDgsOCw4aDI0YzQuNDE4LDAsOC0zLjU4Miw4LThWMjk2aDMyOA0KCQkJCWM0LjQxOCwwLDgtMy41ODIsOC04VjMyQzQzNiwyNy41ODIsNDMyLjQxOCwyNCw0MjgsMjR6IE04NCw0ODBoLThWMTZoOFY0ODB6IE00MjAsMTIwaC04MHY4MGg4MHY4MGgtODB2LTgwaC04MHY4MGgtODB2LTgwaC04MA0KCQkJCXYtODBoODBWNDBoODB2ODBoODBWNDBoODBWMTIweiIvPg0KCQkJPHJlY3QgeD0iMTgwIiB5PSIxMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=">\
+						</div>\
+					</div>\
+				</div>\
+			</div>\
+		</div>'	
 }
 
 interfaceBuilder.buildInterface = function() {

@@ -207,11 +207,13 @@ img {
 }
 
 .goal__action {
+	height: 25px;
+	width: 25px;
 }
 
 .goal__action__img {
 	position: absolute;
-	top: -12px;
+	top: 11px;
 	height: 25px;
 	width: 25px;
 	z-index: 100;
@@ -220,4 +222,8 @@ img {
 
 .goal__action:hover .goal__action__img {
 	fill: purple;
+}
+
+.card__form__desc {
+	
 }
