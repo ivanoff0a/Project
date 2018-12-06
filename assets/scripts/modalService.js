@@ -51,9 +51,13 @@ modalService.modals = {
 					</div>\
 					<div class="card__form card__form__desc">\
 						<p>опиши свое действие !</p>\
-						<input type="text" class="js-newProjectDesc">\
+						<textarea type="text" class="js-newProjectDesc"></textarea>\
 					</div>\
-					<div class="card__btn js-createAction">\
+					<div class="card__form">\
+						<p>выбери срок выполнения действия!</p>\
+						<input type="text" class="js-newProjectDuration">\
+					</div>\
+					<div class="card__btn js-createCheckpoint">\
 						<svg class="card__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\
 							width="47px" height="47px" viewBox="0 0 47 47" style="enable-background:new 0 0 47 47;" xml:space="preserve">\
 							<g>\
