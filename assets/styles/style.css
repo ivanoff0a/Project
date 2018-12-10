@@ -193,6 +193,7 @@ textarea {
 	z-index: 1;
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 }
 
 .goal__path:hover {
@@ -218,8 +219,16 @@ textarea {
 
 .goal__action {
 	position: absolute;
-	top: -17px;
-	height: 25px;
+	top: -19px;
+	/*left: 120px;*/
+	height: auto;
+	width: 25px;
+}
+
+.goal__action__checked {
+	position: absolute;
+	top: -19px;
+	height: auto;
 	width: 25px;
 }
 
@@ -230,9 +239,21 @@ textarea {
 	transition: .3s;
 }
 
-.goal__action:hover .goal__action__img {
+.goal__action__checked__img {
+	height: 25px;
+	width: 25px;
+	z-index: 100;
+	transition: .3s;
+}
+
+.goal__action__img:hover {
 	fill: purple;
 }
+
+.goal__action__checked__img:hover {
+	fill: grey;
+}
+
 
 .card__form__desc {
 	
