@@ -1,4 +1,4 @@
-	body, h1, h2, h3, h4, a, p {
+	body, h1, h2, h3, h4, a, p, textarea {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -188,7 +188,7 @@ textarea {
 
 .goal__path {
 	position: relative;
-	width: 240px;
+	width: 200px;
 	border-bottom: 2px dashed black;
 	z-index: 1;
 	display: flex;
@@ -220,7 +220,6 @@ textarea {
 .goal__action {
 	position: absolute;
 	top: -19px;
-	/*left: 120px;*/
 	height: auto;
 	width: 25px;
 }
@@ -235,7 +234,7 @@ textarea {
 .goal__action__img {
 	height: 25px;
 	width: 25px;
-	z-index: 100;
+	z-index: 101;
 	transition: .3s;
 }
 

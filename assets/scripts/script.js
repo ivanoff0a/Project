@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	let addPurposeBtn = $('.js-addPurpose');
-	let userProjects = [
-	];
+	let userProjects = [];
+	let goalActionCheckedPosition = 0;
+	let goalActionPosition = 0;
 
 	$('body').on('click', '.js-addCheckpoint', function() {
 		modalService.openModal('newAction');
@@ -34,14 +35,14 @@ $(document).ready(function() {
 		userProjects[0].checkpoints.push({
 			projectAction: $('body').find('.js-newProjectAction').val(), 
 			projectActionDesc: $('body').find('.js-newProjectDesc').val(),
-			projectActionDuration: $('body').find('.js-newProjectDuration').val()
-		})
+			projectActionDuration: $('body').find('.js-newProjectDuration').val(),
+			positionActionChecked: (goalActionCheckedPosition += 80),
+			positionAction: (goalActionPosition += 80)
+		});
 		$('.modal').remove();
 		console.log(userProjects[0]);
-		interfaceBuilder.build('goalScreen');
 		$('.js-textProjectName').text(userProjects[userProjects.length - 1].projectName);
-		$('.goal__path').css('width', ($('.goal__path').width() + 120) + 'px');
-		$('.goal__path').css('justify-content', 'space-around');
+		$('.goal__path').css('width', ($('.goal__path').width() + 80) + 'px');
 		$('.goal__path').append(
 			'<div class="goal__action__checked">\
 				<svg version="1.1" class="goal__action__checked__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">\
@@ -49,7 +50,9 @@ $(document).ready(function() {
 				</svg>\
 			</div>'
 		);
-		$('body').find('.goal__action__checked').css('right', '+=70');
-		$('body').find('.goal__action').css('left', '+=70');
+		let c = userProjects[0].checkpoints;
+		let last = $('body').find('.goal__action__checked').length - 1; 
+		$('body').find('.goal__action__checked').eq(last).css('left', c[c.length - 1].positionActionChecked + 'px');
+		$('body').find('.goal__action').eq(last).css('right', c[c.length - 1].positionAction + 'px');
 	});
 });
