@@ -90,6 +90,7 @@ textarea {
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
+	z-index: 99;
 }
 
 .modal__bg {
@@ -238,7 +239,7 @@ textarea {
 	transition: .3s;
 }
 
-.goal__action__checked__img {
+.checkpoint__action__checked__img {
 	height: 25px;
 	width: 25px;
 	z-index: 100;
@@ -249,19 +250,81 @@ textarea {
 	fill: purple;
 }
 
-.goal__action__checked__img:hover {
+.checkpoint__icon-checked:hover {
 	fill: grey;
 }
 
-.goal__action__checked__container {
-	position: relative;
+.checkpoint__icon-checked {
+
 }
 
-.goal__action__checked__info {
-	height: 200px;
-	width: 80px;
-	top: -220px;
-	background-color: black;
-	z-index: 100;
+.checkpoint__container {
+    position: absolute;
+    top: -18px;
+    z-index: 5;
+}
+
+.checkpoint__info {
+    position: absolute;
+    bottom: 100px;
+  	width: 300px;
+    min-height: 350px;
+    background-color: #E6E6E6;
+    transform: translateX(calc(-50% + 7px));
+    transition: .3s ease-out;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.checkpoint__info.-isOpened {
+	display: block;
+}
+
+.checkpoint__container.-isActive .checkpoint__info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.checkpoint__info:before {
 	position: absolute;
+	display: block;
+	content: '';
+
+	bottom: -30px;
+	left: 50%;
+
+	width: 45px;
+	height: 45px;
+	background-color: #E6E6E6;
+	transform: rotate(45deg)  translateX(-50%);
+}
+
+.info-elem {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 280px;
+}
+
+.info-elem p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.info__done {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.info__icon-done {
+	margin-left: 10px;
+	height: 35px;
+}
+
+.info__icon-done:hover {
+	fill: green;	
+}
+
+.info__icon-done.-isDone {
+	color: green;
 }

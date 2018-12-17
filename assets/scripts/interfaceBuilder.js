@@ -33,7 +33,7 @@ interfaceBuilder.interfaces = {
 						</svg>	\
 						<p class="panel-item__p">new purpose !</p>\
 					</div>',
-	goalScreen: 
+	goalScreen:
 		'<div class="goal-container">\
 			<div class="goal__header">\
 				<img src="assets/img/route.svg">\
