@@ -17,7 +17,7 @@ modalService.modals = {
 			<input type="text" class="js-newProjectName">\
 		</div>\
 		<div class="card__form">\
-			<p>введи время, которое готов потратить на достижение цели!</p>\
+			<p>введи время, которое готов потратить на достижение цели !</p>\
 			<input type="text" class="js-newProjectDuration">\
 		</div>\
 		<div class="card__btn js-createGoal">\
@@ -54,7 +54,7 @@ modalService.modals = {
 						<textarea type="text" class="js-newProjectDesc"></textarea>\
 					</div>\
 					<div class="card__form">\
-						<p>выбери срок выполнения действия!</p>\
+						<p>выбери срок выполнения действия !</p>\
 						<input type="text" class="js-newProjectDuration">\
 					</div>\
 					<div class="card__btn js-createCheckpoint">\

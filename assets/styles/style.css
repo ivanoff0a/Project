@@ -325,6 +325,10 @@ textarea {
 	fill: green;	
 }
 
+.info__icon-done {
+	fill: black;
+}
+
 .info__icon-done.-isDone {
-	color: green;
+	fill: green;
 }
