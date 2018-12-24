@@ -79,13 +79,28 @@ modalService.modals = {
 							</g>\
 						</svg>\
 					</div>\
-				</div>'
-
+				</div>',
+	congratulationsScreen:
+	'<div class="card">\
+		<h1>{{userName}}, поздравляем! Вы наконец-то смогли {{projectName}}!</h1>\
+		<img class="congrats-icon"src="assets/img/success.svg">\
+	</div>'				
 };
 
 
-modalService.openModal = function(modal) {
+modalService.openModal = function(modal, customVars) {
+	var template = modalService.modals[modal];
+
+	if(customVars) {
+		var names = Object.keys(customVars);
+		for(var i = 0; i < names.length; i++){
+			var name = names[i];
+			var rname = new RegExp("{{"+ name +"}}", 'gm');
+			template = template.replace(rname, customVars[name]);
+		}
+	}
+
 	$('body').append(modalService.modals.base);
-	$('.modal__body').append(modalService.modals[modal]);
+	$('.modal__body').append(template);
 }
 

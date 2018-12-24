@@ -329,6 +329,11 @@ textarea {
 	fill: black;
 }
 
-.info__icon-done.-isDone {
+.info__icon-done.-isDone,
+.checkpoint__action__checked__img.-isDone {
 	fill: green;
+}
+
+.congrats-icon {
+	height: 25px;
 }

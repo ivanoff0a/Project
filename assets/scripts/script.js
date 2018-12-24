@@ -83,24 +83,35 @@ $(document).ready(function() {
 	};
 
 	$('body').on('click', '.checkpoint__icon-checked', function() {
-		$('.checkpoint__container').removeClass('-isActive');
-		$(this).parent().toggleClass('-isActive');
+		var $parent = $(this).parent(); 
+		$('.checkpoint__container').not($parent).removeClass('-isActive');
+		$parent.toggleClass('-isActive');
 	});
 	
 	$('body').on('click', '.info__icon-done', function() {
-		console.log($(this).parent());
+		var $icon = $(this);
+		$icon.toggleClass('-isDone');
+		$icon.parents('.checkpoint__container').find('.checkpoint__action__checked__img').toggleClass('-isDone');
+		checkAllDone();
+	})
 
+	function checkAllDone() {
+		var doneCheckpointsCount = $('.checkpoint__action__checked__img.-isDone').length;
+		var allCheckpointsCount = $('.checkpoint__action__checked__img').length;
+		if(doneCheckpointsCount === allCheckpointsCount && doneCheckpointsCount > 0){
+			showMessage();
+		}
+	}
 
+	function showMessage(){
+		setTimeout(function() {
+			var vars = {
+				userName: userProjects[0].userName, 
+				projectName: userProjects[0].projectName
+			};
+			console.log(vars);
+			modalService.openModal('congratulationsScreen', vars );
+		}, 600)		
+	}	
 
-
-
-
-		// if (".info__icon-done".style.fill == "black"){
-  //   		".info__icon-done".style.fill = "green";
-  //   		checkpointStatus = true;
-  // 		} else {
-  //   		".info__icon-done".style.fill = "black";
-  //   		checkpointStatus = false;
-  // 		}
-	})	
 });
