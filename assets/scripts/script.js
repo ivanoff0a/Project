@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 	$('body').on('click', '.js-addCheckpoint', function() {
 		modalService.openModal('newAction');
+		$('.checkpoint__container').removeClass('-isActive');
 	});	
 	
 	interfaceBuilder.buildInterface('goalScreen');
@@ -45,7 +46,7 @@ $(document).ready(function() {
 		console.log(userProjects[0]);
 		$('.js-textProjectName').text(userProjects[userProjects.length - 1].projectName);
 		createCheckpoint(userProjects[0].checkpoints[userProjects[0].checkpoints.length - 1]);
-		$('.checkpoint__icon-checked').removeClass('-isActive');
+
 	});
 
 	function createCheckpoint(checkpoint){
@@ -82,9 +83,10 @@ $(document).ready(function() {
 	};
 
 	$('body').on('click', '.checkpoint__icon-checked', function() {
+		$('.checkpoint__container').removeClass('-isActive');
 		$(this).parent().toggleClass('-isActive');
 	});
-
+	
 	$('body').on('click', '.info__icon-done', function() {
 		console.log($(this).parent());
 
