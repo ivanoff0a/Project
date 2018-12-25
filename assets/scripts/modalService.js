@@ -50,7 +50,7 @@ modalService.modals = {
 						<input type="text" class="js-newProjectAction">\
 					</div>\
 					<div class="card__form card__form__desc">\
-						<p>опиши свое действие !</p>\
+						<p>заметки !</p>\
 						<textarea type="text" class="js-newProjectDesc"></textarea>\
 					</div>\
 					<div class="card__form">\
@@ -82,8 +82,10 @@ modalService.modals = {
 				</div>',
 	congratulationsScreen:
 	'<div class="card">\
-		<h1>{{userName}}, поздравляем! Вы наконец-то смогли {{projectName}}!</h1>\
-		<img class="congrats-icon"src="assets/img/success.svg">\
+		<div class="congratulations__container">\
+			<h1>{{userName}}, поздравляем! вы наконец-то смогли {{projectName}}!</h1>\
+			<img src="assets/img/success.svg">\
+		</div>\
 	</div>'				
 };
 

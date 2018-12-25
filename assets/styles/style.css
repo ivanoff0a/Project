@@ -42,7 +42,7 @@ textarea {
 }
 
 .container h1 {
-	font-size: 100px;
+	font-size: 80px;
 	padding-bottom: 50px;
 }
 
@@ -334,6 +334,14 @@ textarea {
 	fill: green;
 }
 
-.congrats-icon {
-	height: 25px;
+.congratulations__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.congratulations__container img {
+	height: 175px;
+    margin-top: 30px;
 }
