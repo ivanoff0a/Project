@@ -10,15 +10,11 @@ modalService.modals = {
 		<p class="card__headline">заполни данные !</p>\
 		<div class="card__form">\
 			<p>введи своё имя !</p>\
-			<input type="text" class="js-newUserName">\
+			<input name="info" type="text" class="js-newUserName">\
 		</div>\
 		<div class="card__form">\
 			<p>введи цель, к которой стремишься !</p>\
-			<input type="text" class="js-newProjectName">\
-		</div>\
-		<div class="card__form">\
-			<p>введи время, которое готов потратить на достижение цели !</p>\
-			<input type="text" class="js-newProjectDuration">\
+			<input name="info" type="text" class="js-newProjectName">\
 		</div>\
 		<div class="card__btn js-createGoal">\
 			<svg class="card__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\
@@ -47,15 +43,11 @@ modalService.modals = {
 					<p class="card__headline">заполни данные !</p>\
 					<div class="card__form">\
 						<p>определи свое действие, для достижения цели !</p>\
-						<input type="text" class="js-newProjectAction">\
+						<input name="info" type="text" class="js-newProjectAction">\
 					</div>\
 					<div class="card__form card__form__desc">\
 						<p>заметки !</p>\
 						<textarea type="text" class="js-newProjectDesc"></textarea>\
-					</div>\
-					<div class="card__form">\
-						<p>выбери срок выполнения действия !</p>\
-						<input type="text" class="js-newProjectDuration">\
 					</div>\
 					<div class="card__btn js-createCheckpoint">\
 						<svg class="card__img" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\

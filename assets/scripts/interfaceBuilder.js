@@ -44,8 +44,7 @@ interfaceBuilder.interfaces = {
 					<div class="goal__elem goal__start">\
 						<div class="goal__info">\
 							<div class="goal__attr">\
-								<p class="goal__param">время начала:</p>\
-								<p class="goal__value">29.11.2018</p>\
+								<p class="goal__param">старт</p>\
 							</div>\
 							<img src="assets/img/home-button.svg">\
 						</div>\
@@ -66,8 +65,7 @@ interfaceBuilder.interfaces = {
 					<div class="goal__elem goal__end">\
 						<div class="goal__info">\
 							<div class="goal__attr">\
-								<p class="goal__param">время конца:</p>\
-								<p class="goal__value">29.11.2019</p>\
+								<p class="goal__param">финиш</p>\
 							</div>\
 							<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDk2IDQ5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk2IDQ5NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTQyOCwyNEgxMDBWOGMwLTQuNDE4LTMuNTgyLTgtOC04SDY4Yy00LjQxOCwwLTgsMy41ODItOCw4djQ4MGMwLDQuNDE4LDMuNTgyLDgsOCw4aDI0YzQuNDE4LDAsOC0zLjU4Miw4LThWMjk2aDMyOA0KCQkJCWM0LjQxOCwwLDgtMy41ODIsOC04VjMyQzQzNiwyNy41ODIsNDMyLjQxOCwyNCw0MjgsMjR6IE04NCw0ODBoLThWMTZoOFY0ODB6IE00MjAsMTIwaC04MHY4MGg4MHY4MGgtODB2LTgwaC04MHY4MGgtODB2LTgwaC04MA0KCQkJCXYtODBoODBWNDBoODB2ODBoODBWNDBoODBWMTIweiIvPg0KCQkJPHJlY3QgeD0iMTgwIiB5PSIxMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIvPg0KCQk8L2c+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=">\
 						</div>\

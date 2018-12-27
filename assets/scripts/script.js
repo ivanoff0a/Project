@@ -33,20 +33,24 @@ $(document).ready(function() {
 	});
 
 	$('body').on('click', '.js-createCheckpoint', function() {
-		let checkpointStatus = false;
-		userProjects[0].checkpoints.push({
-			projectAction: $('body').find('.js-newProjectAction').val(), 
-			projectActionDesc: $('body').find('.js-newProjectDesc').val(),
-			projectActionDuration: $('body').find('.js-newProjectDuration').val(),
-			projectActionStatus: checkpointStatus,
-			positionActionChecked: (goalActionCheckedPosition += 80),
-			positionAction: (goalActionPosition += 80)
-		});
-		$('.modal').remove();
-		console.log(userProjects[0]);
-		$('.js-textProjectName').text(userProjects[userProjects.length - 1].projectName);
-		createCheckpoint(userProjects[0].checkpoints[userProjects[0].checkpoints.length - 1]);
+		// if (checkFormValid('checkpoint')) {
+			let checkpointStatus = false;
+			userProjects[0].checkpoints.push({
+				projectAction: $('body').find('.js-newProjectAction').val(), 
+				projectActionDesc: $('body').find('.js-newProjectDesc').val(),
+				projectActionDuration: $('body').find('.js-newProjectDuration').val(),
+				projectActionStatus: checkpointStatus,
+				positionActionChecked: (goalActionCheckedPosition += 80),
+				positionAction: (goalActionPosition += 80)
+			});
+			$('.modal').remove();
+			console.log(userProjects[0]);
+			$('.js-textProjectName').text(userProjects[userProjects.length - 1].projectName);
+			createCheckpoint(userProjects[0].checkpoints[userProjects[0].checkpoints.length - 1]);
 
+		// } else {
+
+		// }
 	});
 
 	function createCheckpoint(checkpoint){
@@ -113,5 +117,13 @@ $(document).ready(function() {
 			modalService.openModal('congratulationsScreen', vars );
 		}, 600)		
 	}	
+
+	// function checkFormValid(type) {
+	// 	if (type === 'checkpoint') {
+
+	// 	} else {
+
+	// 	}
+	// }
 
 });

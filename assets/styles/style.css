@@ -98,6 +98,7 @@ textarea {
 
 .container h1 {
 	padding-bottom: 50px;
+	font-weight: 500;
 }
 
 .panel-item__img {
@@ -230,9 +231,8 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
-
-
 
 .goal__elem {
 	width: 130px;
