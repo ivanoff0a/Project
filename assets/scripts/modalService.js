@@ -83,7 +83,7 @@ modalService.modals = {
 	congratulationsScreen:
 	'<div class="card">\
 		<div class="congratulations__container">\
-			<h1>{{userName}}, поздравляем! вы наконец-то смогли {{projectName}}!</h1>\
+			<h1>{{userName}}, поздравляем! вы наконец-то смогли {{projectName}} !</h1>\
 			<img src="assets/img/success.svg">\
 		</div>\
 	</div>'				
